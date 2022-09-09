@@ -1,0 +1,500 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Mercado Libre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center p-4 card text-bg-warning" style="border-radius: 20px;">
+            <div class="card-body">
+
+                <h1 id="title">Estudio de Mercado Libre </h1>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="col-4 p-3">
+                <div class="flex flex-col mt-4">
+                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-gray-200 sm:rounded-lg"
+                                style="border-radius: 20px;">
+                                <div id="incidencias-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-left p-5">
+                                            <svg class="text-lg-start mb-3" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 384 512" style="width: 25px;">
+                                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                            </svg>
+                                            <h3 id="device-register"></h3>
+                                            <p class=" fst-italic" for="" style="font-size: 13px;">
+                                                Dispositivos cuentan con envio Gratis</p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 p-3">
+                <div class="flex flex-col mt-4">
+                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-gray-200 sm:rounded-lg"
+                                style="border-radius: 20px;">
+                                <div id="incidencias-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-left p-5">
+                                            <svg class="text-lg-start mb-3" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 384 512" style="width: 25px;">
+                                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                            </svg>
+                                            <h3 id="seller-stars"></h3>
+                                            <p class=" fst-italic" for="seller-stars" style="font-size: 13px;">
+                                                tienen buena calificacion de Vendedor</p>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 p-3">
+                <div class="flex flex-col mt-4">
+                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-gray-200 sm:rounded-lg"
+                                style="border-radius: 20px;">
+                                <div id="incidencias-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-left p-5">
+                                            <svg class="text-lg-start mb-3" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 384 512" style="width: 25px;">
+                                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                            </svg>
+                                            <h3 id="device-mp"></h3>
+                                            <p class=" fst-italic" for="device-mp" style="font-size: 13px;">
+                                                Equipos se encuentran en promocion</p>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="d-flex">
+            <div class="col-4 p-3 h-100">
+                <div class=" mt-4">
+                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-gray-200 sm:rounded-lg"
+                                style="border-radius: 20px;">
+                                <div id="incidencias-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row p-3 m-3 mb-5">
+                                        <div class="d-block accordion text-left p-5">
+                                            <button type="button" class="btn btn-primary p-3" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                Top 50
+                                            </button>
+                                            <button type="button" class="btn btn-primary  p-3" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop1">
+                                                Tiendas Oficiales
+                                            </button>
+                                            <button type="button" class="btn btn-primary  p-3" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop2">
+                                                productos con menor precio
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 p-3">
+                <div class="flex flex-col mt-4">
+                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="shadow overflow-hidden border-gray-200 sm:rounded-lg"
+                                style="border-radius: 20px;">
+                                <div id="incidencias-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-left p-5">
+                                            <script src="https://code.highcharts.com/highcharts.js"></script>
+                                            <script src="https://code.highcharts.com/highcharts-more.js"></script>
+                                            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                                            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                                            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+                                            <figure class="highcharts-figure">
+                                                <div id="container"></div>
+
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="staticBackdropLabel">Top 50</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" id="table1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Precios</th>
+                                <th scope="col">Link</th>
+                                <th scope="col">Direccion</th>
+                                <th scope="col">Envio Gratis?</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider" id="table-group">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="staticBackdropLabel1">Tiendas Oficiales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" id="table2">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Tienda</th>
+                                <th scope="col">No de Dispositivos</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider" id="table-stores">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel12" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="staticBackdropLabel12">Tiendas Oficiales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" id="table3">
+                        <thead>
+                            <tr>
+                                <th scope="col">* Precios
+                                </th>
+                                <th scope="col">* Seller ID
+                                </th>
+                                <th scope="col">Marca</th>
+                                <th scope="col"> Envió Gratis (True/False)</th>
+                                <th scope="col"> Tipo de Logística</th>
+                                <th scope="col"> Lugar de operación del Seller</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider" id="table-prices">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
+</body>
+
+</html>
+<style>
+    #container {
+        height: 400px;
+    }
+
+    .highcharts-figure,
+    .highcharts-data-table table {
+        min-width: 320px;
+        max-width: 800px;
+        margin: 1em auto;
+    }
+
+    .highcharts-data-table table {
+        font-family: Verdana, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid #ebebeb;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .highcharts-data-table caption {
+        padding: 1em 0;
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    .highcharts-data-table th {
+        font-weight: 600;
+        padding: 0.5em;
+    }
+
+    .highcharts-data-table td,
+    .highcharts-data-table th,
+    .highcharts-data-table caption {
+        padding: 0.5em;
+    }
+
+    .highcharts-data-table thead tr,
+    .highcharts-data-table tr:nth-child(even) {
+        background: #f8f8f8;
+    }
+
+    .highcharts-data-table tr:hover {
+        background: #f1f7ff;
+    }
+</style>
+
+<script>
+
+    // Create our number formatter.
+    var formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+
+    var x = "";
+
+    async function ml() {
+        const headers = {};
+        const body = {};
+        const url = "https://api.mercadolibre.com/sites/MLM/search?category=MLM1051";
+        const url2 = "https://api.mercadolibre.com/sites/MLM/search?category=MLM1051&offset=50";
+        const res = await fetch(url, {
+            method: "GET",
+            paging: {
+            }
+        }, true);
+        const res1 = await fetch(url2, {
+            method: "GET",
+            paging: {
+            }
+        }, true);
+        let response = await res.json();
+        let response1 = await res1.json();
+        console.log(response)
+        console.log(response1)
+        response.results.forEach(element => {
+            let meli_id = element.id
+
+            //let meli_id = element.id
+            let title = element.title
+            let sellerId = element.seller.id
+            let sellerName = element.seller.id
+            let priceDefault = element.price
+            let prices = element.prices
+            let stock = element.available_quantity
+            let link = element.permalink
+            let sellerCity = element.seller_address.city.name
+            let sellerState = element.seller_address.state.name
+            let sellerCountry = element.seller_address.country.name
+            let sellerAddress = sellerCity + ", " + sellerState + ", " + sellerCountry
+            let freeShipping = (element.shipping.free_shipping == true ? "Si" : "No")
+            let logisticType = element.shipping.logistic_type
+            let attributes = element.attributes
+            let attributesMarca = element.attributes[0].value_name
+
+
+
+            $("#table-prices").append('<tr><td>' + formatter.format(priceDefault) + '</td><td>' + sellerId + '</td><td>' + attributesMarca + '</td><td>' + freeShipping + '</td><td>' + logisticType + '</td><td>' + sellerAddress + '</td></tr>')
+
+            $("#table-group").append('<tr><td>' + title + '<br> Vendedor: ' + sellerId + '</td><td>' + formatter.format(priceDefault) + '<br>Stock: ' + stock + '</td><td>' + link + '</td><td>' + sellerAddress + '</td><td>Envio Gratis? ' + freeShipping + '<br> Tipo de Logistica:' + logisticType + '</td></tr>')
+
+
+
+            attributes.forEach(attr => {
+                attributesName = attr.name + ": " + attr.value_name
+
+                $("#table-group").append('<td>' + attributesName + '</td><tr>')
+            });
+
+        });
+
+
+
+
+
+        $("#device-register").text(response.available_filters[16].values[0].results)
+
+        $("#device-mp").text(response.available_filters[15].values[0].results)
+
+        $("#seller-stars").text(response.available_filters[8].values[0].results)
+
+        response.available_filters[1].values.forEach(element1 => {
+            $("#table-stores").append('<tr><td>' + element1.id + '</td><td>' + element1.name + '</td><td>' + element1.results + '</td></tr>')
+        });
+
+        response.available_filters[4].values.forEach(element2 => {
+
+            x += "'" + element2.name + "',"
+
+        });
+
+
+        $("#table1").dataTable()
+        $("#table2").dataTable()
+        $("#table3").dataTable()
+
+        console.log(x);
+    }
+
+    ml()
+
+
+
+
+    const chart = Highcharts.chart('container', {
+        title: {
+            text: 'rangoS de precios'
+        },
+        subtitle: {
+            text: 'stadistic by RichardDev'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb',]
+        },
+        series: [{
+            type: 'column',
+            name: 'Unemployed',
+            colorByPoint: true,
+            data: [5412, 4977],
+            showInLegend: false
+        }]
+    });
+
+    document.getElementById('plain').addEventListener('click', () => {
+        chart.update({
+            chart: {
+                inverted: false,
+                polar: false
+            },
+            subtitle: {
+                text: 'Chart option: Plain | Source: ' +
+                    '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
+                    'target="_blank">NAV</a>'
+            }
+        });
+    });
+
+    document.getElementById('inverted').addEventListener('click', () => {
+        chart.update({
+            chart: {
+                inverted: true,
+                polar: false
+            },
+            subtitle: {
+                text: 'Chart option: Inverted | Source: ' +
+                    '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
+                    'target="_blank">NAV</a>'
+            }
+        });
+    });
+
+    document.getElementById('polar').addEventListener('click', () => {
+        chart.update({
+            chart: {
+                inverted: false,
+                polar: true
+            },
+            subtitle: {
+                text: 'Chart option: Polar | Source: ' +
+                    '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
+                    'target="_blank">NAV</a>'
+            }
+        });
+    });
+</script>
